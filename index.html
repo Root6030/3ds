@@ -1,0 +1,114 @@
+<!DOCTYPE html><!--type of document defined to be HTML5-->
+
+<html lang="en"><!--root element of HTML Page-->
+
+    <head><!--contains meta information about document-->
+        <title>3DSciSolutions</title><!--element specifies a title for a document-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <div class="header" id="myHeader">
+                <img src="images/logo.png"/>
+                <!--marquee is a elemnt used to insert scrolling area of test-->
+                <marquee behavior="scroll" direction="left" style="margin-top: 25px" >The Products that will Revolutionize the World of Science and Medicine in the Future</marquee>
+                <section class="mediabuttons">
+                    <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.snapchat.com/l/en-gb/" target="_blank" class="fa fa-snapchat-ghost"></a>
+                </section>
+            </div>
+                
+            <!--<a href="/default.asp" class="topnav-icons fa fa-home w3-left w3-bar-item w3-button" title="Home"></a>-->
+                <nav class="navbar"><!--defines the navigation links-->
+                <ul>
+                    <li><a href=""><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Our Product</a></li>
+                    <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li> 
+                </ul>
+            </nav>
+            
+            <!--div defines section in a HTML document. Below span, image holder and button for a slider-->    
+        <div class="slider-holder">
+            <span id="slider-image-1"></span>
+            <span id="slider-image-2"></span>
+            <span id="slider-image-3"></span>
+            <span id="slider-image-4"></span>
+        <div class="image-holder">
+            <img class="slider-image"
+                 src="images/sl5.jpg"/>
+            <img class="slider-image"
+                 src="images/sl3.png"/>
+            <img class="slider-image"
+                 src="images/sl1.jpg"/>
+            <img class="slider-image"
+                 src="images/sl2.jpg"/>
+        </div>
+        <!--<div class="button-holder"> <!--Buttons can be turned on at any time
+            <a href="#slider-image-1" class="slider-change"></a>
+            <a href="#slider-image-2" class="slider-change"></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+            <a href="#slider-image-4" class="slider-change"></a>
+        </div>-->
+            </div>
+            
+            <!--Script for animated slider-->
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("slider-image");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }            
+                myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                            setTimeout(carousel, 5000);
+                }   
+            </script>
+            
+            <article>
+                <section>
+                    <h1>3DSciSolutions</h1>
+                    <p>3DSciSolutions, aims to use human cells to grow fully functional lungs in which disease states or conditions can be replicated. A myriad of different drugs and treatments can then be tested to see what works for a particular disease and can be used to develop personalised medical treatments. Our company is made up of a diverse, multilingual team of researchers with a passion for ethical research.</p>
+                    <h1>Lung Disease</h1>                
+                    <p>Lung diseases such as asthma, lung cancer, pneumonia, tuberculosis, cystic fibrosis and chronic obstructive pulmonary disease (COPD) are an important global health problem (Medical Line Plus, 2019).</p>
+                        <figure class="img1">
+							<img src="images/lungcancer.jpg" alt="lungcancer"/>	
+							<figcaption class="figcap1">Lung Disease - Lung Cancer</figcaption>	
+						</figure>
+                    <p>Hundreds of millions of people worldwide suffer from lung-related diseases. Asthma kills around 1000 people every day and affects as many as 339 million people worldwide. As many as 470,000 people in Ireland have asthma. COPD is now the fourth largest killer in the world and lung cancer is the most common cancer in men and women around the world (American Lung Association, 2019).<br>Here in Ireland we have one of the highest levels of cystic fibrosis in the world and is therefore often referred to as the Celtic Curse.</p>
+                        <figure class="img2">
+							<img src="images/3dlungs.gif" alt="3dlungs"/>	
+							<figcaption class="figcap1">3D Medical Animation</figcaption>	
+						</figure>
+                    <p><br>People affected by lung diseases usually suffer from them for the rest of their lives and their quality of life substantially lower than that of a healthy person. Therefore, it is of the utmost importance that new therapies are developed in an ethical, efficient and effective manner.</p>
+                </section>
+                    <aside>
+                         <figure class="img3">
+							<img src="images/dna.gif" alt="dna"/>	
+							<figcaption class="figcap1">DNA</figcaption>	
+						</figure>
+                        
+                        <figure class="img3">
+							<img src="images/steamcell.jpg" alt="stem cell"/>	
+							<figcaption class="figcap1">Stem Cell</figcaption>	
+						</figure>
+                    </aside>
+            </article>
+            
+                <footer><!--footer defined as a last section of the web-->
+                    <p>Copyright &copy; 2019 by <b>Root6030</b> Email: 
+                        <a href="mailto:root6030@gmail.com">root6030</a></p>  
+                </footer>            
+        </div>
+    </body>
+</html>
