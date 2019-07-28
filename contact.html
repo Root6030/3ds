@@ -26,8 +26,8 @@
                 <nav class="navbar"><!--defines the navigation links-->
                 <ul>
                     <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="product.html">Our Product</a></li>
+                    <li><a href="about.html"><i class="fa fa-fw fa-question-circle"></i>About Us</a></li>
+                    <li><a href="product.html"><i class="fa fa-fw fa-product-hunt"></i>Our Product</a></li>
                     <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>               
                 </ul>
             </nav>
@@ -56,6 +56,23 @@
                     <img src="images/erika.jpeg"/>
                     <p class="descr2"><b>Position in the Enterprise:</b> Chief of Staff</p>
                     <p class="descr2"><b>Email: </b><a href="mailto: 3dscisolutions@gmail.com">3DSciSolutions</a></p>
+                </section>
+                <section class="forms">
+                    <form method="post" action="send_mail.php">
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                            First Name:<br>
+                            <input type="text" name="first name" placeholder="first name..." value="" required><br>
+                            Last Name:<br>
+                            <input type="text" name="last name" placeholder="last name..." value="" required><br>
+                            Email:<br>
+                            <input type="email" name="email" placeholder="email address..." value="" required><br>
+                            Your Message:<br>
+                            <textarea name="message" maxlength="1000" placeholder="write something..." value=""></textarea><br>
+                            <input type="reset">
+                            <input type="submit">
+                        </fieldset>
+                    </form>
                 </section>
             </section>
             

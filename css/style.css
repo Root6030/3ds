@@ -35,7 +35,7 @@ body {
     max-width: 100px;
     width: 100%;
     display: ;
-}
+}   
 .mediabuttons .fa {
     padding: 10px;
     font-size: 15px;
@@ -324,6 +324,40 @@ h2 {
     padding-right: 1em;
     font-size: 20px;
 }
+
+.forms {
+    float: left;
+    max-width: 1000px;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+.forms fieldset {
+    font-size: 20px;
+}
+.forms legend {
+    text-align: center;
+    font-size: 24px;
+}
+.forms [type=text], [type=email] {
+    max-width: 500px;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;    
+}
+.forms textarea {
+    max-width: 950px;
+    width: 100%;
+    height: 250px;
+    font-size: 16px;
+    text-align: justify;
+}
+.forms  [type=submit], [type=reset] {
+    max-width: 150px;
+    width: 100%;
+    font-size: 20px;
+}
+
 /*footer setting size, colour, text allignment*/
 footer {
     max-width: 1000px;
